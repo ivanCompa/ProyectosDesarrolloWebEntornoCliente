@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de tareas</title>
+    <script defer type="module" src="./js/main.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Gestor de tareas</h1>
+
+      <!-- Sección del formulario de creacion de tarea -->
+      <section id="taskForm">
+        <h2>Crear tarea:</h2>
+        <label>Título:</label>
+        <input type="text" id="inputTitulo" />
+        <label>Descripción:</label>
+        <input type="text" id="inputDescripcion" />
+        <label>Prioridad:</label>
+        <select id="selectorPrioridad">
+          <option value="high">Alta</option>
+          <option value="normal">Media</option>
+          <option value="low">Baja</option>
+        </select>
+        <input type="button" id="inputGuardar" value="Guardar" />
+
+        <!-- Filtros -->
+        <div id="filtros">
+          <label for="filtro">Filtrar tareas:</label>
+          <select id="filtro">
+            <option value="all">Todas</option>
+            <option value="done">Completadas</option>
+            <option value="notdone">No completadas</option>
+            <option value="high">Prioridad Alta</option>
+            <option value="normal">Prioridad Media</option>
+            <option value="low">Prioridad Baja</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Sección de lista de tareas -->
+      <section id="taskList">
+        <p id="tareasCreadas">Total de tareas creadas: 0</p>
+        <div id="tablaTareas" class="tabla"></div>
+      </section>
+    </main>
+  </body>
+</html>

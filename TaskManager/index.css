@@ -1,0 +1,66 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: start;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+#taskForm {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#taskForm h2 {
+  margin-bottom: 15px;
+}
+
+#taskForm label {
+  display: block;
+  margin-top: 10px;
+}
+
+#taskForm input[type="text"],
+#taskForm select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+#taskForm input[type="button"] {
+  margin-top: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#filtros {
+  margin-top: 20px;
+}
+
+#taskList {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#taskList p {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#tablaTareas {
+  margin-top: 10px;
+}
