@@ -1,0 +1,64 @@
+main {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contadorVidas,
+.contadorPuntos,
+.contadorHighScore,
+.contadorLastScore {
+  margin: 0;
+}
+
+.spawnerPalabras {
+  width: 600px;
+  height: 600px;
+  border: 2px solid black;
+  overflow: hidden;
+  position: relative;
+}
+
+.palabra {
+  position: absolute;
+  top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnIniciarJuego {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.escribir {
+  width: 300px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.gameOverText {
+  text-align: center;
+  font-size: 48px;
+  color: red;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnReiniciar {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
