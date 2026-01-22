@@ -1,0 +1,116 @@
+body {
+  font-family: Arial;
+  background: #f8d0e0;
+  color: #333;
+  margin: 0;
+}
+
+nav {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+nav button.active {
+  color: #d0006f;
+  text-decoration: underline;
+}
+
+#view {
+  padding: 20px;
+}
+
+img {
+  image-rendering: pixelated;
+  width: 120px;
+  height: 120px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.escape {
+  background: #f44336;
+  color: white;
+}
+button.attack {
+  background: #2196f3;
+  color: white;
+}
+button.capture {
+  background: #9c27b0;
+  color: white;
+}
+
+.progress-bar {
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 20px;
+  margin: 10px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2196f3;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.shiny {
+  color: violet;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+  background: white;
+}
+
+th,
+td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+}
+
+.download-btn {
+  background: #4caf50;
+  color: white;
+  margin-top: 10px;
+}
+
+#team {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.team-card {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
